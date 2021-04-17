@@ -1,0 +1,27 @@
+name: 'Delete Tweets'
+description: 'Automatically delete Tweets older than a specified number of days'
+inputs:
+  tweet-max-age:
+    description: 'Tweet Max Age In Days'
+    default: 3
+  twitter-consumer-key:
+    description: 'Twitter Consumer Key'
+    required: true
+  twitter-consumer-secret:
+    description: 'Twitter Consumer Secret'
+    required: true
+  twitter-oauth-secret:
+    description: 'Twitter OAuth Secret'
+    required: true
+  twitter-user:
+    description: 'Twitter Username'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    TWEET_MAX_AGE_IN_DAYS: ${{ inputs.tweet-max-age }}
+    TWITTER_CONSUMER_KEY: ${{ inputs.twitter-consumer-key }}
+    TWITTER_CONSUMER_SECRET: ${{ inputs.twitter-consumer-secret }}
+    TWITTER_OAUTH_SECRET: ${{ inputs.twitter-oauth-secret }}
+    TWITTER_USER: ${{ inputs.twitter-user }}
