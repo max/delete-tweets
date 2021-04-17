@@ -13,6 +13,9 @@ inputs:
   twitter-oauth-secret:
     description: 'Twitter OAuth Secret'
     required: true
+  twitter-oauth-token:
+    description: 'Twitter OAuth Token'
+    required: true
   twitter-user:
     description: 'Twitter Username'
     required: true
@@ -24,4 +27,5 @@ runs:
     TWITTER_CONSUMER_KEY: ${{ inputs.twitter-consumer-key }}
     TWITTER_CONSUMER_SECRET: ${{ inputs.twitter-consumer-secret }}
     TWITTER_OAUTH_SECRET: ${{ inputs.twitter-oauth-secret }}
+    TWITTER_OAUTH_TOKEN: ${{ inputs.twitter-oauth-token }}
     TWITTER_USER: ${{ inputs.twitter-user }}
