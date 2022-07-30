@@ -13,7 +13,7 @@ OAUTH_TOKEN = ENV["TWITTER_OAUTH_TOKEN"]
 OAUTH_TOKEN_SECRET = ENV["TWITTER_OAUTH_SECRET"]
 
 # any special favorites?
-IDS_TO_SAVE_FOREVER = [997143044943110144] # my jeopardy tweet
+IDS_TO_SAVE_FOREVER = [1552665460243439616] # my jeopardy tweet
 IDS_TO_SAVE_FOREVER << 1269657130925056001 # another one, why not
 
 # any special keywords?
