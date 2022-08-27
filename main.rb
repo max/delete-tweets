@@ -18,7 +18,7 @@ IDS_TO_SAVE_FOREVER << 1269657130925056001 # Missing FTP Tweet
 IDS_TO_SAVE_FOREVER << 1563190704783773699 # Heroku Erosion Resistance Tweet
 
 # any special keywords?
-KEYWORDS_TO_SAVE_FOREVER = ["#savethisoneforever"]
+KEYWORDS_TO_SAVE_FOREVER = ["#save"]
 KEYWORDS_TO_SAVE_FOREVER << "no boba no life"
 
 ### you shouldn't have to change anything below this line ###
